@@ -2,50 +2,92 @@
   <div class="content">
     <h1 class="title">BUSCAR CEP</h1>
     <p class="text">
-      Bem vindo, no Busca cep voçê recebe infromações rapidas e faceis <br />
+      Bem vindo, no Busca cep voçê recebe informações rapidas e faceis <br />
       a partir de um cep, vamos iniciar colocando um cep abaixo!
     </p>
     <div class="container_search">
       <input
-      #buscaCEP
-      type="text"
-      class="form-control"
-      name="cep"
-      id="cep"
-      (blur)="blur($event)"
-      ngModel
-      [(ngModel)]="cep"
-      required
-      f
-  />
-      <button class="button_search" >
-        <img src="../assets/image/search.png" alt="" />Buscar
-      </button>
-    </div>
-    <div class="card">
-      <h3 class="item">CEP  <input
-        #buscaCEP
+        placeholder="Buscar CEP.."
         type="text"
         class="form-control"
         name="cep"
         id="cep"
-        (blur)="blur($event)"
+        (blur)="blur()"
         ngModel
         [(ngModel)]="cep"
         required
         f
-    /></h3>
-      <h3 class="item">Logradouro  </h3>
-      <h3 class="item">Complemento<span>Casa</span></h3>
-      <h3 class="item">Bairro<span>Guaratiba</span></h3>
-      <h3 class="item">Localidade<span>Rio de Janeiro</span></h3>
-      <h3 class="item">UF<span>RJ</span></h3>
-      <label for="nome">CEP</label>
+      />
     </div>
+    <form [formGroup]="myForm" (ngSubmit)="enviarFormulario()" class="form">
+      <div class="card">
+        <h3 class="item">
+          CEP
+          <input
+            type="text"
+            class="form-control"
+            name="cepForm"
+            id="cepForm"
+            ngModel
+            required
+            formControlName="cepForm"
+            [(ngModel)]="cepForm"
+          />
+        </h3>
+        <h3 class="item">
+          Logradouro
+          <input
+            type="text"
+            class="form-control"
+            name="logradouro"
+            id="logradouro"
+            ngModel
+            required
+            formControlName="logradouro"
+            [(ngModel)]="logradouro"
+          />
+        </h3>
+        <h3 class="item">
+          Bairro<input
+            type="text"
+            class="form-control"
+            name="bairro"
+            id="bairro"
+            ngModel
+            required
+            formControlName="bairro"
+            [(ngModel)]="bairro"
+          />
+        </h3>
+        <h3 class="item">
+          Localidade<input
+            type="text"
+            class="form-control"
+            name="localidade"
+            id="localidade"
+            ngModel
+            required
+            formControlName="localidade"
+            [(ngModel)]="localidade"
+          />
+        </h3>
+        <h3 class="item">
+          UF
+          <input
+            type="text"
+            class="form-control"
+            name="uf"
+            id="uf"
+            ngModel
+            required
+            formControlName="uf"
+            [(ngModel)]="uf"
+          />
+        </h3>
+      </div>
+      <button class="button" type="submit" [disabled]="!myForm.valid">
+        Enviar
+      </button>
+    </form>
   </div>
-
-
-
 </main>
-
-
