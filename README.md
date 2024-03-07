@@ -22,7 +22,7 @@ ng serve --open
 
 #### Apresentação
 
-Desenvolver uma aplicação front-end utilizando Angular com TypeScript. A aplicação fornecer interfaces com dados do endereço buscado através do CEP informado.
+Desenvolver uma aplicação front-end utilizando Angular com TypeScript. A aplicação fornecer interface com dados do endereço buscado através do CEP informado.
 
 ## App
 https://buscar-cep-blush.vercel.app/
