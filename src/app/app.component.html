@@ -1,0 +1,51 @@
+<main>
+  <div class="content">
+    <h1 class="title">BUSCAR CEP</h1>
+    <p class="text">
+      Bem vindo, no Busca cep voçê recebe infromações rapidas e faceis <br />
+      a partir de um cep, vamos iniciar colocando um cep abaixo!
+    </p>
+    <div class="container_search">
+      <input
+      #buscaCEP
+      type="text"
+      class="form-control"
+      name="cep"
+      id="cep"
+      (blur)="blur($event)"
+      ngModel
+      [(ngModel)]="cep"
+      required
+      f
+  />
+      <button class="button_search" >
+        <img src="../assets/image/search.png" alt="" />Buscar
+      </button>
+    </div>
+    <div class="card">
+      <h3 class="item">CEP  <input
+        #buscaCEP
+        type="text"
+        class="form-control"
+        name="cep"
+        id="cep"
+        (blur)="blur($event)"
+        ngModel
+        [(ngModel)]="cep"
+        required
+        f
+    /></h3>
+      <h3 class="item">Logradouro  </h3>
+      <h3 class="item">Complemento<span>Casa</span></h3>
+      <h3 class="item">Bairro<span>Guaratiba</span></h3>
+      <h3 class="item">Localidade<span>Rio de Janeiro</span></h3>
+      <h3 class="item">UF<span>RJ</span></h3>
+      <label for="nome">CEP</label>
+    </div>
+  </div>
+
+
+
+</main>
+
+
