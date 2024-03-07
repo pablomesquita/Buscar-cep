@@ -16,13 +16,13 @@
 - Para iniciar o servidor de desenvolvimento rode os comandos abaixo
 
 ```
-yarn or npm
+yarn or npm install
 ng serve --open
 ```
 
 #### Apresentação
 
-Desenvolver uma aplicação front-end utilizando Angular com TypeScript. A aplicação fornecer interfaces com dados do do endereço buscado através do cep informado.
+Desenvolver uma aplicação front-end utilizando Angular com TypeScript. A aplicação fornecer interfaces com dados do endereço buscado através do CEP informado.
 
 ## App
 https://buscar-cep-blush.vercel.app/
