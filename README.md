@@ -10,7 +10,7 @@
 
 - Clone o repositório com
   ```
-  git clone https://github.com/Junior331/challenge-xgrow
+  git clone https://github.com/pablomesquita/Buscar-cep
   ```
 - É necessario ter o Node 16.13 ou superior instalado
 - Para iniciar o servidor de desenvolvimento rode os comandos abaixo
